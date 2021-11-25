@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.students {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.student {
+    position: relative;
+    overflow: hidden;
+    width: 30%;
+    height: 312px;
+    margin: 1.25%;
+    /*background: black;*/
+}
+
+.student .name {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    padding: 8px;
+    color: white;
+    background: black;
+}
+
+.student .picture {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.waves {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wave {
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+    transition: all 268ms ease-in-out 0s;
+    background: hsla(360, 100%, 50%, 1);
+}
+
+.wave:hover {
+    transform: scale(3) rotate(360deg) !important;
+}

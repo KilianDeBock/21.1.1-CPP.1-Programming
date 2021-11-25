@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: tomato;
+    min-height: 100vh;
+    padding-bottom: 4rem;
+}
+
+#themenav {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#themenav a {
+    text-decoration: none;
+    color: orange; /* verander kleur hier */
+    font-weight: 800;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#themenav a.active,
+#themenav a:hover {
+    background-color: orange; /* verander kleur hier */
+    color: white; /* verander kleur hier */
+}
+
+#soundboard {
+    margin: 50px auto;
+    width: 70vw;
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#soundboard .sample {
+    flex: 0 0 250px;
+    padding: 20px;
+    margin: 5px auto;
+    background: white;
+    border: 1px solid #54c5fd;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#soundboard .sample:hover {
+    background-color: violet; /* verander kleur hier */
+    cursor: pointer;
+}
+
+#recordbar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#recordbar input, #recordbar button {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid orange;
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin: 5px;
+}
+
+#recordbar button {
+    background-color: orange;
+    color: white;
+}
